@@ -1,4 +1,3 @@
-
 import './App.css'
 
 function App() {
@@ -26,6 +25,41 @@ function App() {
         <p>
           Please check out the demo section below to hear a sampling of these.
         </p>
+      </section>
+
+      <section id="demo-reels">
+        <h2>Demo Reels</h2>
+        <p>Listen to a sampling of my work below:</p>
+        <div className="demo-reel-list">
+          <div>
+            <h3>Video Game</h3>
+            <audio controls>
+              <source src="/Chris Griesemer - Video Game.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div>
+            <h3>Character</h3>
+            <audio controls>
+              <source src="/Chris_Griesemer_Character.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div>
+            <h3>Commercial</h3>
+            <audio controls>
+              <source src="/Chris_Griesemer_Commercial.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div>
+            <h3>Narration</h3>
+            <audio controls>
+              <source src="/Chris_Griesemer_Narration.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
       </section>
 
       <section id="credits">
@@ -76,41 +110,6 @@ function App() {
         </ul>
       </section>
 
-      <section id="demo-reels">
-        <h2>Demo Reels</h2>
-        <p>Listen to a sampling of my work below:</p>
-        <div className="demo-reel-list">
-          <div>
-            <h3>Video Game</h3>
-            <audio controls>
-              <source src="/Chris Griesemer - Video Game.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <div>
-            <h3>Character</h3>
-            <audio controls>
-              <source src="/Chris_Griesemer_Character.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <div>
-            <h3>Commercial</h3>
-            <audio controls>
-              <source src="/Chris_Griesemer_Commercial.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <div>
-            <h3>Narration</h3>
-            <audio controls>
-              <source src="/Chris_Griesemer_Narration.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-        </div>
-      </section>
-
       <section id="featured-videos">
         <h2>Featured Videos</h2>
         <div className="video-grid">
@@ -146,7 +145,23 @@ function App() {
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:chris@voiceforanychoice.com">chris@voiceforanychoice.com</a></p>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor="name">Name:</label><br />
+            <input type="text" id="name" name="name" required style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }} />
+          </div>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor="email">Email:</label><br />
+            <input type="email" id="email" name="email" required style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }} />
+          </div>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor="message">Message:</label><br />
+            <textarea id="message" name="message" required rows="5" style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }}></textarea>
+          </div>
+          <button type="submit" style={{ background: '#ffb347', color: '#232526', padding: '0.7rem 2rem', border: 'none', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>Send</button>
+        </form>
+        <p style={{ marginTop: '2rem' }}>Email: <a href="mailto:chris@voiceforanychoice.com">chris@voiceforanychoice.com</a></p>
         <p>Location: Central Texas</p>
       </section>
     </div>
