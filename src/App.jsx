@@ -12,7 +12,7 @@ function App() {
       }}>
       <header>
         <h1 style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Chris Griesemer - Voice Over Actor</h1>
-        <p>Central Texas | Professional Voice Over since 2001</p>
+        <p>Central Texas | Professional Voice Over Since 2001</p>
       </header>
       {/* About Section */}
       <section id="about">
