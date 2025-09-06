@@ -151,6 +151,7 @@ function App() {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           action="/thanks"
+          enctype="application/x-www-form-urlencoded"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p style={{ display: 'none' }}>
