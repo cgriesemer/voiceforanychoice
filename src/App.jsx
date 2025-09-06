@@ -145,7 +145,7 @@ function App() {
 
       <section id="contact">
         <h2>Contact</h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="/success">
           <input type="hidden" name="form-name" value="contact" />
           <div style={{ marginBottom: '1rem' }}>
             <label htmlFor="name">Name:</label><br />
