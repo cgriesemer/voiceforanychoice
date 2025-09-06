@@ -143,35 +143,10 @@ function App() {
         </div>
       </section>
       {/* Contact Section */}
+            {/* Contact Section */}
       <section id="contact">
         <h2>Contact</h2>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="/success"
-          netlify
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p style={{ display: 'none' }}>
-            <label>Don’t fill this out: <input name="bot-field" /></label>
-          </p>
-          <div style={{ marginBottom: '1rem' }}>
-            <label htmlFor="name">Name:</label><br />
-            <input type="text" id="name" name="name" required style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }} />
-          </div>
-          <div style={{ marginBottom: '1rem' }}>
-            <label htmlFor="email">Email:</label><br />
-            <input type="email" id="email" name="email" required style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }} />
-          </div>
-          <div style={{ marginBottom: '1rem' }}>
-            <label htmlFor="message">Message:</label><br />
-            <textarea id="message" name="message" rows="5" required style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid #ccc' }}></textarea>
-          </div>
-          <button type="submit" style={{ background: '#ffb347', color: '#232526', padding: '0.7rem 2rem', border: 'none', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>Send</button>
-        </form>
-        <p style={{ marginTop: '2rem' }}>Email: <a href="mailto:chris@voiceforanychoice.com">chris@voiceforanychoice.com</a></p>
+        <p>Email: <a href="mailto:voiceforanychoice@gmail.com">voiceforanychoice@gmail.com</a></p>
         <p>Location: Central Texas</p>
       </section>
     </div>
