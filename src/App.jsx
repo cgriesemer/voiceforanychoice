@@ -3,9 +3,12 @@ import './App.css'
 function App() {
     return (
       <div className="container" style={{ 
-        maxWidth: '100%', 
+        width: '100%',
+        maxWidth: '100vw',
         overflowX: 'hidden',
-        padding: '1rem'
+        padding: '1rem',
+        margin: '0 auto',
+        boxSizing: 'border-box'
       }}>
       <header>
         <h1 style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Chris Griesemer - Voice Over Actor</h1>
@@ -36,11 +39,13 @@ function App() {
         <p>Listen to a sampling of my work below:</p>
         <div className="demo-reel-list" style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-          gap: '2rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', 
+          gap: '1rem',
           width: '100%',
-          maxWidth: '1200px',
-          margin: '0 auto'
+          maxWidth: '100%',
+          margin: '0 auto',
+          padding: '0 1rem',
+          boxSizing: 'border-box'
         }}>
           <div style={{ textAlign: 'center' }}>
             <h3>Video Game</h3>
@@ -125,11 +130,13 @@ function App() {
         <h2>Featured Videos</h2>
         <div className="video-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '2rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+          gap: '1rem',
           width: '100%',
-          maxWidth: '1200px',
-          margin: '0 auto'
+          maxWidth: '100%',
+          margin: '0 auto',
+          padding: '0 1rem',
+          boxSizing: 'border-box'
         }}>
           <div className="video-item" style={{ width: '100%' }}>
             <iframe src="https://player.vimeo.com/video/535582426?fl=pl&fe=sh" width="100%" height="315" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Vimeo Video"></iframe>
