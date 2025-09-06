@@ -1,7 +1,8 @@
 import './App.css'
 
 function App() {
-    <div className="container">
+    return (
+      <div className="container">
       <header>
         <h1>Chris Griesemer - Voice Over Actor</h1>
         <p>Central Texas | Professional Voice Over since 2001</p>
