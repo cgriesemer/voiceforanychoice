@@ -30,31 +30,37 @@ function App() {
       <section id="demo-reels">
         <h2>Demo Reels</h2>
         <p>Listen to a sampling of my work below:</p>
-        <div className="demo-reel-list">
-          <div>
+        <div className="demo-reel-list" style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(2, 1fr)', 
+          gap: '2rem',
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          <div style={{ textAlign: 'center' }}>
             <h3>Video Game</h3>
-            <audio controls>
+            <audio controls style={{ width: '100%' }}>
               <source src="/Chris Griesemer - Video Game.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <h3>Character</h3>
-            <audio controls>
+            <audio controls style={{ width: '100%' }}>
               <source src="/Chris_Griesemer_Character.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <h3>Commercial</h3>
-            <audio controls>
+            <audio controls style={{ width: '100%' }}>
               <source src="/Chris_Griesemer_Commercial.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <h3>Narration</h3>
-            <audio controls>
+            <audio controls style={{ width: '100%' }}>
               <source src="/Chris_Griesemer_Narration.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
